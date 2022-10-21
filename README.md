@@ -50,7 +50,7 @@ Most likely this would not need users, but a Users will be created for the purpo
 
 ### Home Page
 
-This page will have an about me of the artist and some photos. 
+This page will have an about me of the artist and some photos. Contact information or business location information as well.
 
 ### View Portfolio
 
@@ -60,3 +60,17 @@ This page will neatly display images of the "art". This could also have a commen
 
 Depending on the type of artist they may have different needs. Some artists may need this section to make appointments, some may need this for receiving any kind of messages. 
 
+
+## Data/Models Setup
+
+The models in this application are:
+- User
+ - has many comments
+ - has one form
+- Product (Artworks)
+ - has many comments
+- Comment
+ - belongs to user
+ - belongs to product
+- Form
+ - belongs to user
